@@ -1,0 +1,39 @@
+.contact {
+  padding: 1rem;
+  background-color: white;
+  &__container {
+    @include flex(row, space-around);
+    max-width: 35%;
+    margin: auto;
+    display: block;
+    @include mobile {
+      max-width: 80%;
+    }
+    button{
+        padding: .5rem;
+    }
+  }
+  &__form {
+    @include flex(column, center);
+  }
+  &__item {
+    @include flex(column, center);
+    margin: 0.5rem;
+    input {
+      padding: 0.6rem;
+      border-radius: 5px;
+      border: solid 1px #e0e0e0;
+      width: 100%;
+      &:active :focus {
+        outline: none;
+        // border: 0;
+      }
+    }
+    textarea {
+      border: solid 1px #e0e0e0;
+      &:active :focus {
+        outline: none;
+      }
+    }
+  }
+}

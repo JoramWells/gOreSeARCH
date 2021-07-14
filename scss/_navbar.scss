@@ -4,13 +4,16 @@
 .header{
     @include flex(row,center);
     background-color: white;
-    padding:.5rem ;
+    align-items: center;
     font-weight: $bold;
     font-size: $lg;
     color: orange;
     @include mobile{
         display: none  !important;
 
+    }
+    img{
+        max-width: 50px;
     }
 }
 
@@ -19,7 +22,7 @@
     align-items: center;
     background-color: $primary-color;
     color: whitesmoke;
-    padding: .5rem;
+    padding: .9rem;
     position: sticky;
     // width: 100%;
     top: 0;
