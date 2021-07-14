@@ -10,7 +10,16 @@
       max-width: 80%;
     }
     button{
-        padding: .5rem;
+        padding: .7rem;
+        background-color: #0892d0;
+        color: white;
+        font-weight: $semi-bold;
+        border: none;
+        border-radius: 5px;
+        &:active {
+            border: none;
+            outline: none;
+        }
     }
   }
   &__form {
