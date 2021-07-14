@@ -1,0 +1,39 @@
+.about {
+  // @include flex(row, center)
+  padding: 1rem;
+  margin: auto;
+  display: block;
+  max-width: 65%;
+
+  @include mobile {
+    padding: 1rem;
+    max-width: 100%;
+  }
+  p {
+    color: gray;
+  }
+  &__section {
+    background-color: white;
+    margin-top: 0;
+  }
+  button {
+    background-color: transparent;
+    color: $secondary-color;
+    font-weight: $semi-bold;
+    font-size: $sm;
+    padding: 0.5rem;
+    border: solid 2px #add8e6;
+    border-radius: 50px;
+    transition: 500ms all;
+    &:active {
+      outline: none;
+      background-color: #add8e6;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  h1 {
+    color: $secondary-color;
+  }
+}

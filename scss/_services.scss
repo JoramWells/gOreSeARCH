@@ -1,0 +1,30 @@
+@import "./flex";
+.services {
+  padding: 1rem;
+  max-width: 65%;
+  margin: auto;
+  display: block;
+  &__container {
+    @include flex(row, space-between);
+    @include mobile{
+        flex-wrap: wrap;
+    }
+  }
+  @include mobile{
+      max-width: 100%;
+  }
+  &__items {
+    border: solid 1px #e0e0e0;
+    margin: 0.2rem;
+    border-radius: 5px;
+    background-color: white;
+    padding: 0.5rem;
+    p {
+      color: gray;
+    }
+    h3{
+        color: $primary-color;
+    }
+
+  }
+}

@@ -1,0 +1,17 @@
+.footer{
+    bottom: 0;
+    &__main{
+        @include flex(row, space-around);
+        align-items: flex-start;
+        background-color: $primary-color;
+        color: white;
+        height: 200px;
+        padding: 1rem;
+    }
+    &__bottom{
+        background-color: black;
+        padding: 1rem;
+        color: white;
+        text-align: center;
+    }
+}

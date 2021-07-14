@@ -1,0 +1,54 @@
+@import './flex';
+@import './variables';
+
+.header{
+    @include flex(row,center);
+    background-color: white;
+    padding:.5rem ;
+    font-weight: $bold;
+    font-size: $lg;
+    color: orange;
+    @include mobile{
+        display: none  !important;
+
+    }
+}
+
+.navbar{
+    @include flex(row,space-between);
+    align-items: center;
+    background-color: $primary-color;
+    color: whitesmoke;
+    padding: .5rem;
+    position: sticky;
+    // width: 100%;
+    top: 0;
+    @include mobile{
+        @include flex(row, space-around);
+        align-items:center;
+        padding: 1rem;
+    }
+    &__logo{
+        @include flex(row, center);
+        align-items: center;
+        font-weight: $semi-bold;
+        font-size: $md;
+        padding-left: 1rem;
+        @include mobile{
+            display: none !important;
+        }
+        img{
+            max-width: 50px;
+            max-height: 50px;
+            border-radius: 100px;
+            // padding-right: .5rem;
+        }
+    }
+    &__right{
+        @include flex(row, center);
+    }
+    &__item{
+        padding: 0 1rem 0 1rem;
+        font-weight: $semi-bold;
+    }
+}
