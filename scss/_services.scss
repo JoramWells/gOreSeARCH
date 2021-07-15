@@ -1,17 +1,21 @@
 @import "./flex";
 .services {
   padding: 1rem;
-  max-width: 65%;
+  max-width: 75%;
   margin: auto;
   display: block;
+  &__section {
+    @include flex(row, center);
+    // height: 100vh;
+  }
   &__container {
     @include flex(row, space-between);
-    @include mobile{
-        flex-wrap: wrap;
+    @include mobile {
+      flex-wrap: wrap;
     }
   }
-  @include mobile{
-      max-width: 100%;
+  @include mobile {
+    max-width: 100%;
   }
   &__items {
     border: solid 1px #e0e0e0;
@@ -22,9 +26,14 @@
     p {
       color: gray;
     }
-    h3{
-        color: $primary-color;
+    h2 {
+      color: $secondary-color;
+      text-align: center;
     }
-
+  }
+  h1 {
+    color: $primary-color;
+    font-size: $lg;
+    text-align: center;
   }
 }

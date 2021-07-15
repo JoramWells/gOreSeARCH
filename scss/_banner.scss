@@ -1,0 +1,57 @@
+.banner {
+  height: 500px;
+  // opacity: 50%;
+  background: linear-gradient(
+      to right,
+      rgba($primary-color, 0.9),
+      rgba($primary-color, 0.3)
+    ),
+    url("/img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.overlay {
+  @include flex(column, center);
+  //   display: block;
+  margin: auto;
+  height: 500px;
+  align-items: center;
+  max-width: 50%;
+  align-items: center;
+  color: white;
+  h1 {
+    font-size: $xl;
+    font-weight: $bold;
+  }
+  p {
+    text-align: center;
+    color: whitesmoke;
+  }
+  @include mobile {
+    max-width: 100%;
+    padding: 0.5rem;
+    h1 {
+      font-size: $lg;
+      font-weight: $bold;
+    }
+    p {
+        text-align: start;
+    }
+  }
+
+  button {
+    padding: 0.5rem;
+    background-color: transparent;
+    color: white;
+    font-weight: $semi-bold;
+    font-size: $sm;
+    border: 2px solid orange;
+    border-radius: 50px;
+    margin: 1rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

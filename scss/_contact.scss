@@ -1,25 +1,28 @@
 .contact {
   padding: 1rem;
-  background-color: white;
   &__container {
     @include flex(row, space-around);
     max-width: 35%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
     margin: auto;
     display: block;
     @include mobile {
       max-width: 80%;
+      background-color: white;
     }
-    button{
-        padding: .7rem;
-        background-color: #0892d0;
-        color: white;
-        font-weight: $semi-bold;
+    button {
+      padding: 0.7rem;
+      background-color: #0892d0;
+      color: white;
+      font-weight: $semi-bold;
+      border: none;
+      border-radius: 5px;
+      &:active {
         border: none;
-        border-radius: 5px;
-        &:active {
-            border: none;
-            outline: none;
-        }
+        outline: none;
+      }
     }
   }
   &__form {
@@ -32,7 +35,7 @@
       padding: 0.6rem;
       border-radius: 5px;
       border: solid 1px #e0e0e0;
-      width: 100%;
+      // width: 100%;
       &:active :focus {
         outline: none;
         // border: 0;
@@ -44,5 +47,10 @@
         outline: none;
       }
     }
+  }
+  h1{
+    text-align: center;
+    font-size: $lg;
+    color: $primary-color;
   }
 }

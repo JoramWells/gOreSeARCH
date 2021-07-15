@@ -4,6 +4,12 @@
   margin: auto;
   display: block;
   max-width: 65%;
+  h1 {
+    text-align: center;
+    font-size: $lg;
+  }
+  // text-align: center;
+  // font-size: $lg;
 
   @include mobile {
     padding: 1rem;
@@ -13,8 +19,11 @@
     color: gray;
   }
   &__section {
+    @include flex(row, center);
+    align-items: center;
     background-color: white;
     margin-top: 0;
+    // height: 100px;
   }
   button {
     background-color: transparent;

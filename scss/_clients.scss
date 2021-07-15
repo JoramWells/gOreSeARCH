@@ -7,6 +7,12 @@
     max-width: 100%;
   }
 
+  &__section {
+    // height: 400px;
+    background-color: white;
+    @include flex(row, center);
+  }
+
   &__container {
     @include flex(row, space-around);
     @include mobile {
@@ -20,7 +26,8 @@
     }
   }
   &__item {
-    @include flex(column, space-around);
+    @include flex(column, center);
+    text-align: center;
     @include mobile {
       @include flex(row, center);
       align-items: center;
@@ -42,5 +49,13 @@
   h3 {
     margin: 0;
     padding: 0;
+  }
+  h1 {
+    color: $primary-color;
+    font-size: $lg;
+    text-align: center;
+  }
+  p {
+    color: gray;
   }
 }

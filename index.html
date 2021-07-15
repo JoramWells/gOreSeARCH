@@ -15,21 +15,44 @@
     <title>GoReSeARCH</title>
   </head>
   <body>
-    <div class="header">
+    <!-- <div class="header">
       <div>
         <img src="img/unable.jpeg" alt="goreseARCH logo" />
       </div>
       Welcome to goreseARCH +254 799 980 846
-    </div>
+    </div> -->
     <nav class="navbar">
-      <div class="navbar__logo">HOME</div>
+      <div class="navbar__logo">
+        <a href="index.html">HOME</a>
+      </div>
+      <form action="">
+        <input type="text" placeholder="Search..." />
+      </form>
       <div class="navbar__right">
         <div class="navbar__item">About us</div>
+        <!-- <div class="navbar__item">Services&Products</div> -->
+        <!-- <div class="navbar__item">Catalogue</div> -->
         <div class="navbar__item">Blog</div>
-        <div class="navbar__item">Login</div>
+        <div class="navbar__item">
+          <a href="login.html">Login</a>
+        </div>
       </div>
     </nav>
     <main>
+      <section class="banner">
+        <div class="overlay">
+          <h1>GOresea<span style="color: orange;">ARCH</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            est corporis aut odio suscipit aliquid voluptatum accusamus quam
+            praesentium, fugiat, amet qui reiciendis dolorem repellat minima,
+            magni quod eveniet! Ipsam.
+          </p>
+          <button>
+            Learn more
+          </button>
+        </div>
+      </section>
       <section class="about__section">
         <div class="about">
           <h1>About us</h1>
@@ -39,6 +62,30 @@
             suscipit asperiores. Nobis laboriosam perspiciatis dolore!
             Repudiandae iure necessitatibus, sequi ducimus maiores laborum eius!
           </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+            distinctio ipsa. Quam rerum quaerat maxime pariatur dolorem nihil.
+            Beatae ut quisquam temporibus quas atque, at expedita nostrum
+            tempora consequatur praesentium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            asperiores enim iste esse, incidunt quis. Consequatur accusamus
+            nostrum beatae, facilis suscipit recusandae tempora facere velit
+            fugit architecto quasi ipsa laudantium!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+            tempore quae, aliquam nihil eum illo dolores beatae impedit amet
+            excepturi iste ab porro, sunt tenetur commodi enim voluptates,
+            possimus numquam?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum
+            error atque vitae, quibusdam odit odio in veritatis ipsa veniam
+            laudantium reprehenderit ducimus, non doloribus distinctio,
+            necessitatibus labore voluptates unde excepturi!
+          </p>
           <button class="btn">Learn more</button>
         </div>
       </section>
@@ -46,17 +93,28 @@
         <div class="services">
           <h1>Our Services</h1>
           <div class="services__container">
-            <div class="services__items">
-              <h3>Academic writing</h3>
+            <figure class="services__items">
+              <img
+                src="img/undraw_version_control_9bpv.svg"
+                style="max-width: 300px"
+                alt=""
+              />
+              <h2>Academic writing</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Commodi, molestiae voluptates. Inventore quod optio repudiandae
                 facilis vitae libero repellendus, reiciendis culpa, sint in
                 autem voluptates accusamus mollitia dignissimos ab soluta.
               </p>
-            </div>
-            <div class="services__items">
-              <h3>Course work</h3>
+              <a href="#">learn more..</a>
+            </figure>
+            <figure class="services__items">
+              <img
+                src="img/undraw_Vehicle_sale_a645.svg"
+                style="max-width: 300px"
+                alt=""
+              />
+              <h2>Course work</h2>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error
                 debitis earum alias est! Tenetur tempore dolor ducimus adipisci
@@ -64,17 +122,23 @@
                 et temporibus recusandae!
               </p>
 
-              <button>learn more..</button>
-            </div>
-            <div class="services__items">
-              <h3>Assignments</h3>
+              <a href="#">learn more..</a>
+            </figure>
+            <figure class="services__items">
+              <img
+                src="img/undraw_movie_night_fldd.svg"
+                style="max-width: 300px"
+                alt=""
+              />
+              <h2>Assignments</h2>
               <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt,
                 cumque doloremque officiis cum tempore placeat error unde magnam
                 odio omnis tempora, recusandae, delectus aut similique
                 consequuntur odit laboriosam consectetur ea.
               </p>
-            </div>
+              <a href="#">learn more..</a>
+            </figure>
           </div>
         </div>
       </section>
@@ -115,8 +179,8 @@
 
       <section class="contact__section">
         <div class="contact">
+          <h1>Contact us</h1>
           <div class="contact__container">
-            <h1>Contact us</h1>
             <form action="" id="form" class="contact__form">
               <div class="contact__item">
                 <label for="email">Email Address</label>
