@@ -17,8 +17,12 @@
 }
 
 .navbar.active{
-  background-color: $primary-color;
+  color: $primary-color;
   transition: all 500ms ease-in-out;
+  background-color: white;
+  a{
+    color: $primary-color;
+  }
 }
 
 .navbar {
