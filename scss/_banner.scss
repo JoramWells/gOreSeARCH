@@ -98,9 +98,10 @@
 }
 
 .description {
-  width: 50% !important;
+  width: 35%;
   margin: auto;
   display: block;
+  font-size: $md;
   @include mobile {
     width: 85% !important;
     padding: 1rem;
