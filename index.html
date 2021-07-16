@@ -32,6 +32,9 @@
         <div class="navbar__item">About us</div>
         <!-- <div class="navbar__item">Services&Products</div> -->
         <!-- <div class="navbar__item">Catalogue</div> -->
+        <div class="navbar__item">
+          <a href="products.html">Products</a>
+        </div>
         <div class="navbar__item">Blog</div>
         <div class="navbar__item">
           <a href="login.html">Login</a>
@@ -44,10 +47,9 @@
           <div style="width: 50%;">
             <h1>GOresea<span style="color: orange">ARCH</span></h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-              est corporis aut odio suscipit aliquid voluptatum accusamus quam
-              praesentium, fugiat, amet qui reiciendis dolorem repellat minima,
-              magni quod eveniet! Ipsam.
+              Okay, lets do this!!
+              &#128512;
+
             </p>
             <button>Learn more</button>
           </div>
@@ -55,8 +57,12 @@
           <div>
             <pre>
             <code>
-                <span style="color: white;"><span style="color: #C45AF1;">#include</span> <span style="color: #297AE7;">stdio.h</span>;</span>
-                <span style="color: #297AE7;">int</span> <span style="color: yellow;">main</span>(void) {
+                <span style="color: white;"><span style="color: #297AE7;">const</span> <span style="color: #C45AF1;">axios</span> = <span style="color: #297AE7;">require('axios')</span>;</span>
+                <span style="color: #297AE7;">app.get('/',(req,res)={
+                  await axios.get('/exniamo')
+                  .then(response=>res.send(response))
+                  .catch(error=>console.log(error))
+                })</span> <span style="color: yellow;">main</span>(void) {
                   <span style="color: yellow;">printf</span>(<span style="color: brown;">"Hello jay"</span>);
                   <span style="color: #C45AF1;">return </span>0;
                   }
@@ -68,31 +74,12 @@
       </section>
       <section class="about__section">
         <div class="about">
-          <h1>About us</h1>
+          <h1>Ok, Let's do this</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis facilis odio minima voluptatibus magnam voluptatem sint
-            suscipit asperiores. Nobis laboriosam perspiciatis dolore!
-            Repudiandae iure necessitatibus, sequi ducimus maiores laborum eius!
+            We are a growing freelance community of software developers that provide software solutions for companies and individuals.
+            Helping companies and individuals scale faster. Developing B2B and B2B SW
           </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
-            distinctio ipsa. Quam rerum quaerat maxime pariatur dolorem nihil.
-            Beatae ut quisquam temporibus quas atque, at expedita nostrum
-            tempora consequatur praesentium.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-            asperiores enim iste esse, incidunt quis. Consequatur accusamus
-            nostrum beatae, facilis suscipit recusandae tempora facere velit
-            fugit architecto quasi ipsa laudantium!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-            tempore quae, aliquam nihil eum illo dolores beatae impedit amet
-            excepturi iste ab porro, sunt tenetur commodi enim voluptates,
-            possimus numquam?
-          </p>
+          <p>Remote solutions and in-house solutions.</p>
           <button class="btn">Learn more</button>
         </div>
       </section>
@@ -151,7 +138,7 @@
 
       <section class="others__sections">
         <div class="others">
-          <h2>Other services</h2>
+          <h2>Services</h2>
           <p>
             High quality assignments for undergraduate, postgraduate and PhD students. Reports and research papers available at affordable prices.
           </p>
@@ -168,15 +155,38 @@
       <section class="others__sections">
         <div class="others">
           <h2>API integration</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam earum nostrum dolorem, error tempora iure, iste aliquid quis similique exercitationem facere tempore nihil eum consequatur quasi cupiditate quibusdam perspiciatis maxime.</p>
+          <h3>eXniamo</h3>
+          <p>
+            X is a search engine, reduces bounce rate and has a recomendation engine. A solution for desktop, web and mobile applications.
+          </p>
 
-          <div>
+          <!-- <div>
             <pre>
               <code>
                 <span style="color: lightblue;">const</span> axios = require('axios');
               </code>
             </pre>
-          </div>
+          </div> -->
+          <h3>3<sup>rd party API's</sup></h3>
+          <p>Payment</p>
+          <ol>
+            <li>M-PESA</li>
+            <li>Telkom</li>
+            <li>Stripe</li>
+            <li>Paypal</li>
+          </ol>
+          <p>Authentication</p>
+          <ol>
+            <li>Firebase</li>
+            <li>Google</li>
+            <li>Facebook</li>
+            <li>Github</li>
+            <li>Instagram</li>
+          </ol>
+          <p>Databases</p>
+          <p>A factor of databaes design and optimazation</p>
+          <li>MongoDB</li>
+          <li>Redis</li>
         </div>
       </section>
 

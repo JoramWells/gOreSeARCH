@@ -28,8 +28,12 @@
     }
   }
 
-  height: 200px;
+  // height: 200px;
   h2 {
+    color: $primary-color;
+    text-align: center;
+  }
+  h3{
     color: $secondary-color;
     text-align: center;
   }
