@@ -1,5 +1,8 @@
 .contact {
   padding: 1rem;
+  // &__section{
+  //   height: 100vh;
+  // }
   &__container {
     @include flex(row, space-around);
     max-width: 35%;

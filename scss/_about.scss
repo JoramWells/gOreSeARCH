@@ -17,13 +17,15 @@
   }
   p {
     color: gray;
+    margin-bottom: 1rem;
   }
   &__section {
     @include flex(row, center);
     align-items: center;
     background-color: white;
     margin-top: 0;
-    // height: 100px;
+    height: 100vh;
+    max-height: -webkit-fill-available;
   }
   button {
     background-color: transparent;
@@ -34,6 +36,8 @@
     border: solid 2px #add8e6;
     border-radius: 50px;
     transition: 500ms all;
+    margin: auto;
+    display: block;
     &:active {
       outline: none;
       background-color: #add8e6;

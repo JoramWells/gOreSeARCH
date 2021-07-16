@@ -1,5 +1,5 @@
 .banner {
-  height: 500px;
+  height: 100vh -webkit-fill-available;
   // opacity: 50%;
   background: linear-gradient(
       to right,
@@ -13,21 +13,31 @@
   z-index: -1;
 }
 .overlay {
-  @include flex(column, center);
+  @include flex(row, space-around);
   //   display: block;
   margin: auto;
   height: 500px;
   align-items: center;
-  max-width: 50%;
+  max-width: 85%;
   align-items: center;
   color: white;
   h1 {
     font-size: $xl;
     font-weight: $bold;
+    // text-align: center;
   }
   p {
-    text-align: center;
+    // text-align: center;
     color: whitesmoke;
+    margin-bottom: 1rem;
+  }
+  pre code{
+    display: block;
+    width: 20rem;
+    background-color:rgba($color: #000000, $alpha: 0.5);
+    // color: rgba($primary-color, 1);
+    padding: .5rem;
+    border-radius: 10px;
   }
   @include mobile {
     max-width: 100%;
@@ -38,6 +48,7 @@
     }
     p {
         text-align: start;
+
     }
   }
 
@@ -49,7 +60,9 @@
     font-size: $sm;
     border: 2px solid orange;
     border-radius: 50px;
-    margin: 1rem;
+    // margin: 1rem;
+    margin: auto;
+    display: block;
     &:hover {
       cursor: pointer;
     }
