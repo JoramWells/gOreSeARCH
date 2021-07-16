@@ -21,7 +21,7 @@
       </div>
       Welcome to goreseARCH +254 799 980 846
     </div> -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
       <div class="navbar__logo">
         <a href="index.html">HOME</a>
       </div>
@@ -57,16 +57,13 @@
           <div>
             <pre>
             <code>
-                <span style="color: white;"><span style="color: #297AE7;">const</span> <span style="color: #C45AF1;">axios</span> = <span style="color: #297AE7;">require('axios')</span>;</span>
-                <span style="color: #297AE7;">app.get('/',(req,res)={
-                  await axios.get('/exniamo')
-                  .then(response=>res.send(response))
-                  .catch(error=>console.log(error))
-                })</span> <span style="color: yellow;">main</span>(void) {
-                  <span style="color: yellow;">printf</span>(<span style="color: brown;">"Hello jay"</span>);
-                  <span style="color: #C45AF1;">return </span>0;
-                  }
-                            </code>
+                <span style="color: white;"><span style="color: #297AE7;">const</span> <span style="color: #f8a05d;">axios</span> = <span style="color: #f09c2f;">require</span><span>('axios')</span>;</span>
+                <span style="color: white;">app.get( <span style="color: brown;">"/"</span>, <span style="color: #297AE7;">async </span>( <span style="color: lightblue;">req,res</span>)=>{
+                  <span style="color: #C45AF1;">await</span> <span style="color: lightblue;">axios</span>.get(<span style="color: brown;">"/exniamo"</span>)
+                  .<span style="color: #d99058;">then</span> (<span style="color: lightblue;">response</span> =>res.<span style="color: #f8a05d;">send</span> (response))
+                  .<span style="color: #d99058;">catch</span> (<span style="color: lightblue;">error</span> =>console.<span style="color:#f8a05d;">log</span>(error))
+                })
+              </code>
           </pre>
           </div>
 
