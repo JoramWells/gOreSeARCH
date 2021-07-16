@@ -1,5 +1,6 @@
 .contact {
   padding: 1rem;
+  background-color: white;
   // &__section{
   //   height: 100vh;
   // }
@@ -12,7 +13,7 @@
     margin: auto;
     display: block;
     @include mobile {
-      max-width: 80%;
+      max-width: 100%;
       background-color: white;
     }
     button {
